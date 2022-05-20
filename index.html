@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multimedia dan Media Source dalam HTML</h1>
+    <ul>
+        <li>
+            <h2>Video</h2>
+            <hr>
+            <video controls width="400" height="200"
+                    autoplay loop muted preload="auto">
+                    <source src="AJARKAN AKU - ARVIAN DWI (OFFICIAL MUSIC VIDEO).mp4" type="video/mp4">
+                </video>
+        </li>
+        <li>
+            <h2>Audio</h2>
+            <hr>
+            <audio controls>
+                <source src="./AJARKAN AKU - ARVIAN DWI (OFFICIAL MUSIC VIDEO).mp3" type="audio/mp3">
+                <p>Browswe tidak mendukung!, gunakan <a href="./AJARKAN AKU - ARVIAN DWI (OFFICIAL MUSIC VIDEO).mp3">link</a> berikut</p>
+            </audio>
+        </li>
+        <li>
+            <h2>Gambar Resonsive</h2>
+            <hr>
+            <picture>
+                <source media="(min-width: 600px)" srcset="pic-1.jpg">
+                <source media="(min-width: 1200px)" srcset="pict.jpg">
+                <img src="pic-1.jpg" alt="pic-1" style="width: auto;">
+            </picture>
+        </li>
+    </ul>
+    
+</body>
+</html>
